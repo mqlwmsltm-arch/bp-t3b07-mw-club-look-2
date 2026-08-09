@@ -1,323 +1,321 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>망원 클럽 룩북 | 정보 - RAW CONCRETE</title>
-    <meta name="description" content="망원 클럽 룩북의 진짜 정보를 원한다면 여기다. 주소, 운영시간, 전화 010-6279-0862. 거짓말 안 한다. 망원동 콘크리트 밑바닥에서 직접 확인해라.">
-    <meta name="keywords" content="망원 클럽, 망원 클럽 룩북, 망원 클럽 룩북 정보, 망원 클럽 룩북 주소, 망원 클럽 룩북 운영시간, 망원 클럽 룩북 전화, 망원동 클럽, 망원 클럽 룩북 2025, 망원 클럽 룩북 후기">
-    <link rel="canonical" href="https://mangwon-club-zone.link-hub.org/about.html">
-    <meta property="og:title" content="망원 클럽 룩북 | 정보 - RAW CONCRETE">
-    <meta property="og:description" content="망원 클럽 룩북의 진짜 정보를 원한다면 여기다. 주소, 운영시간, 전화 010-6279-0862. 거짓말 안 한다. 망원동 콘크리트 밑바닥에서 직접 확인해라.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: #1a1a1a;
-            color: #d4d4d4;
-            line-height: 1.5;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #e0e0e0;
-            border-left: 6px solid #ff3b3b;
-            padding-left: 12px;
-            margin: 30px 0 15px;
-        }
-        h1 {
-            font-size: 3rem;
-            border-left-width: 10px;
-        }
-        h2 {
-            font-size: 2rem;
-        }
-        h3 {
-            font-size: 1.5rem;
-        }
-        p {
-            margin: 12px 0;
-            font-size: 1rem;
-            color: #b0b0b0;
-        }
-        a {
-            color: #ff3b3b;
-            text-decoration: none;
-            border-bottom: 2px solid #ff3b3b;
-            transition: 0.2s;
-        }
-        a:hover {
-            color: #1a1a1a;
-            background: #ff3b3b;
-            border-bottom: 2px solid #1a1a1a;
-        }
-        img, svg {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-        }
-        section {
-            padding: 50px 0;
-            border-bottom: 1px solid #333;
-        }
-        section:first-of-type {
-            padding-top: 80px;
-        }
-        nav {
-            background: #111;
-            padding: 20px 0;
-            border-bottom: 4px solid #ff3b3b;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: #ff3b3b;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            border: none;
-        }
-        nav .logo:hover {
-            background: none;
-            color: #ff3b3b;
-            border: none;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-        nav ul li a {
-            color: #d4d4d4;
-            border: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-            padding: 8px 12px;
-            border: 1px solid transparent;
-        }
-        nav ul li a:hover {
-            background: #ff3b3b;
-            color: #111;
-            border: 1px solid #ff3b3b;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 3px;
-            background: #d4d4d4;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: #111;
-                padding: 20px;
-                border-bottom: 4px solid #ff3b3b;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-        .tel-link {
-            display: inline-block;
-            background: #ff3b3b;
-            color: #111;
-            padding: 12px 24px;
-            font-weight: 900;
-            font-size: 1.2rem;
-            border: none;
-            margin: 20px 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .tel-link:hover {
-            background: #d4d4d4;
-            color: #111;
-        }
-        .card {
-            background: #222;
-            padding: 30px;
-            margin: 20px 0;
-            border-left: 6px solid #ff3b3b;
-        }
-        .card p {
-            margin: 8px 0;
-        }
-        .faq-item {
-            margin: 20px 0;
-            padding: 20px;
-            background: #222;
-            border-left: 4px solid #ff3b3b;
-        }
-        .faq-item h3 {
-            border: none;
-            padding: 0;
-            margin: 0 0 10px;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-        @media (max-width: 768px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>망원 클럽 룩북 | 정보 - RAW CONCRETE</title>
+ <meta name="description" content="망원 클럽 룩북의 진짜 정보를 원한다면 여기다. 거짓말 안 한다. 망원동 콘크리트 밑바닥에서 직접 확인해라.">
+ <meta name="keywords" content="망원 클럽, 망원 클럽 룩북, 망원 클럽 룩북 정보, 망원 클럽 룩북 주소, 망원 클럽 룩북 운영시간, 망원 클럽 룩북 전화, 망원동 클럽, 망원 클럽 룩북 2025, 망원 클럽 룩북 후기">
+ <link rel="canonical" href="https://mangwon-club-zone.link-hub.org/about.html">
+ <meta property="og:title" content="망원 클럽 룩북 | 정보 - RAW CONCRETE">
+ <meta property="og:description" content="망원 클럽 룩북의 진짜 정보를 원한다면 여기다. 거짓말 안 한다. 망원동 콘크리트 밑바닥에서 직접 확인해라.">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Courier New', Courier, monospace;
+ background: #1a1a1a;
+ color: #d4d4d4;
+ line-height: 1.5;
+ }
+ h1, h2, h3, h4, h5, h6 {
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ color: #e0e0e0;
+ border-left: 6px solid #ff3b3b;
+ padding-left: 12px;
+ margin: 30px 0 15px;
+ }
+ h1 {
+ font-size: 3rem;
+ border-left-width: 10px;
+ }
+ h2 {
+ font-size: 2rem;
+ }
+ h3 {
+ font-size: 1.5rem;
+ }
+ p {
+ margin: 12px 0;
+ font-size: 1rem;
+ color: #b0b0b0;
+ }
+ a {
+ color: #ff3b3b;
+ text-decoration: none;
+ border-bottom: 2px solid #ff3b3b;
+ transition: 0.2s;
+ }
+ a:hover {
+ color: #1a1a1a;
+ background: #ff3b3b;
+ border-bottom: 2px solid #1a1a1a;
+ }
+ img, svg {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ .full-bleed {
+ width: 100vw;
+ margin-left: calc(-50vw + 50%);
+ }
+ section {
+ padding: 50px 0;
+ border-bottom: 1px solid #333;
+ }
+ section:first-of-type {
+ padding-top: 80px;
+ }
+ nav {
+ background: #111;
+ padding: 20px 0;
+ border-bottom: 4px solid #ff3b3b;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ z-index: 1000;
+ }
+ nav .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ nav .logo {
+ font-size: 1.5rem;
+ font-weight: 900;
+ color: #ff3b3b;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+ border: none;
+ }
+ nav .logo:hover {
+ background: none;
+ color: #ff3b3b;
+ border: none;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 30px;
+ }
+ nav ul li a {
+ color: #d4d4d4;
+ border: none;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-size: 0.9rem;
+ padding: 8px 12px;
+ border: 1px solid transparent;
+ }
+ nav ul li a:hover {
+ background: #ff3b3b;
+ color: #111;
+ border: 1px solid #ff3b3b;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 30px;
+ height: 3px;
+ background: #d4d4d4;
+ }
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ width: 100%;
+ background: #111;
+ padding: 20px;
+ border-bottom: 4px solid #ff3b3b;
+ }
+ nav ul.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ h1 {
+ font-size: 2rem;
+ }
+ h2 {
+ font-size: 1.5rem;
+ }
+ }
+ .tel-link {
+ display: inline-block;
+ background: #ff3b3b;
+ color: #111;
+ padding: 12px 24px;
+ font-weight: 900;
+ font-size: 1.2rem;
+ border: none;
+ margin: 20px 0;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ }
+ .tel-link:hover {
+ background: #d4d4d4;
+ color: #111;
+ }
+ .card {
+ background: #222;
+ padding: 30px;
+ margin: 20px 0;
+ border-left: 6px solid #ff3b3b;
+ }
+ .card p {
+ margin: 8px 0;
+ }
+ .faq-item {
+ margin: 20px 0;
+ padding: 20px;
+ background: #222;
+ border-left: 4px solid #ff3b3b;
+ }
+ .faq-item h3 {
+ border: none;
+ padding: 0;
+ margin: 0 0 10px;
+ }
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 30px;
+ }
+ @media (max-width: 768px) {
+ .grid-2 {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://mangwon-club-zone.link-hub.org/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="/" class="logo">RAW CONCRETE</a>
-            <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul>
-                <li><a href="/">홈</a></li>
-                <li><a href="/lookbook">룩북</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/contact">연락</a></li>
-            </ul>
-        </div>
-    </nav>
+ <nav>
+ <div class="container">
+ <a href="/" class="logo">RAW CONCRETE</a>
+ <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">
+ 
+ 
+ 
+ </div>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/lookbook">룩북</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/contact">연락</a></li>
+ </ul>
+ </div>
+ </nav>
 
-    <main>
-        <section>
-            <div class="container">
-                <h1>정보</h1>
-                <p>망원 클럽 룩북. 여기 진짜 정보를 박아놨다. 거짓말, 가식, 포장 다 집어치워. 콘크리트 바닥에서 직접 부딪혀라.</p>
-                <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
-            </div>
-        </section>
+ <main>
+ <section>
+ <div class="container">
+ <h1>정보</h1>
+ <p>망원 클럽 룩북. 여기 진짜 정보를 박아놨다. 거짓말, 가식, 포장 다 집어치워. 콘크리트 바닥에서 직접 부딪혀라.</p>
+ 
+ </div>
+ </section>
 
-        <section>
-            <div class="container">
-                <h2>📍 위치 & 시간</h2>
-                <div class="grid-2">
-                    <div class="card">
-                        <h3>주소</h3>
-                        <p>서울특별시 마포구 망원동</p>
-                        <p>정확한 주소는 전화로만 알려준다. 010-6279-0862</p>
-                        <p>지도 찍고 오지 마라. 길 찾는 것도 실력이다.</p>
-                    </div>
-                    <div class="card">
-                        <h3>운영시간</h3>
-                        <p>월-토: 20:00 - 05:00</p>
-                        <p>일요일: 쉰다. 니네도 쉬어라.</p>
-                        <p>변경 가능. 전화하고 와라. 010-6279-0862</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+ <section>
+ <div class="container">
+ <h2>📍 위치 & 시간</h2>
+ <div class="grid-2">
+ <div class="card">
+ <h3>주소</h3>
+ <p>서울특별시 마포구 망원동</p>
+ <p>정확한 주소는 전화로만 알려준다.</p>
+ <p>지도 찍고 오지 마라. 길 찾는 것도 실력이다.</p>
+ </div>
+ <div class="card">
+ <h3>운영시간</h3>
+ <p>월-토: 20:00 - 05:00</p>
+ <p>일요일: 쉰다. 니네도 쉬어라.</p>
+ <p>변경 가능. 전화하고 와라.</p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        <section>
-            <div class="container">
-                <h2>💀 룰 & 에티켓</h2>
-                <div class="card">
-                    <p>1. 사진 찍고 SNS에 올리지 마라. 여기는 인스타 명소가 아니다.</p>
-                    <p>2. 싸우지 마라. 진짜 싸움은 밖에서 해라.</p>
-                    <p>3. 술에 취하면 나가라. 정신 차리고 들어와라.</p>
-                    <p>4. 전화 010-6279-0862로 예약하고 와라. 깜빡하고 오면 문전박사다.</p>
-                    <p>5. 브루탈리즘을 존중해라. 여기는 콘크리트 교회다.</p>
-                </div>
-            </div>
-        </section>
+ <section>
+ <div class="container">
+ <h2>💀 룰 & 에티켓</h2>
+ <div class="card">
+ <p>1. 사진 찍고 SNS에 올리지 마라. 여기는 인스타 명소가 아니다.</p>
+ <p>2. 싸우지 마라. 진짜 싸움은 밖에서 해라.</p>
+ <p>3. 술에 취하면 나가라. 정신 차리고 들어와라.</p>
+ <p>4. 깜빡하고 오면 문전박사다.</p>
+ <p>5. 브루탈리즘을 존중해라. 여기는 콘크리트 교회다.</p>
+ </div>
+ </div>
+ </section>
 
-        <section>
-            <div class="container">
-                <h2>❓ 자주 묻는 개소리</h2>
-                <div class="faq-item">
-                    <h3>Q: 처음 가도 되나요?</h3>
-                    <p>A: 처음이면 전화해라. 010-6279-0862. 길 안내해준다. 근데 니가 길치면 포기해라.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q: 드레스코드 있나요?</h3>
-                    <p>A: 있다. 깔끔하게 입고 와라. 운동복, 트레이닝복 걸러. 블랙, 그레이, 카키. 콘크리트 색깔 입고 와라.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q: 여자 혼자 가도 되나요?</h3>
-                    <p>A: 된다. 우리 직원들이 다 챙겨준다. 근데 니가 이상한 사람이면 쫓겨난다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q: 주차 되나요?</h3>
-                    <p>A: 없다. 대중교통 이용해라. 망원역에서 걸어와라. 10분. 운동도 할 겸.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q: 가격은 얼마인가요?</h3>
-                    <p>A: 전화해라. 010-6279-0862. 여기서 가격 말하면 재미없잖아.</p>
-                </div>
-            </div>
-        </section>
+ <section>
+ <div class="container">
+ <h2>❓ 자주 묻는 개소리</h2>
+ <div class="faq-item">
+ <h3>Q: 처음 가도 되나요?</h3>
+ <p>A: 처음이면 전화해라. 길 안내해준다. 근데 니가 길치면 포기해라.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q: 드레스코드 있나요?</h3>
+ <p>A: 있다. 깔끔하게 입고 와라. 운동복, 트레이닝복 걸러. 블랙, 그레이, 카키. 콘크리트 색깔 입고 와라.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q: 여자 혼자 가도 되나요?</h3>
+ <p>A: 된다. 우리 직원들이 다 챙겨준다. 근데 니가 이상한 사람이면 쫓겨난다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q: 주차 되나요?</h3>
+ <p>A: 없다. 대중교통 이용해라. 망원역에서 걸어와라. 10분. 운동도 할 겸.</p>
+ </div>
+ <div class="faq-item">
+ <h3>Q: 가격은 얼마인가요?</h3>
+ <p>A: 전화해라. 여기서 가격 말하면 재미없잖아.</p>
+ </div>
+ </div>
+ </section>
 
-        <section>
-            <div class="container">
-                <h2>📞 연락처</h2>
-                <div class="card">
-                    <p>전화: 010-6279-0862</p>
-                    <p>문자: 가능. 근데 전화가 더 빠르다.</p>
-                    <p>인스타: 없다. SBS, MBC, KBS 다 없다. 오프라인으로만.</p>
-                    <p>이메일: 보내지 마라. 안 본다.</p>
-                    <a href="tel:010-6279-0862" class="tel-link">📞 지금 전화 걸기</a>
-                </div>
-            </div>
-        </section>
-    </main>
+ <section>
+ <div class="container">
+ <h2>📞 연락처</h2>
+ <div class="card">
+ 
+ <p>문자: 가능. 근데 전화가 더 빠르다.</p>
+ <p>인스타: 없다. SBS, MBC, KBS 다 없다. 오프라인으로만.</p>
+ <p>이메일: 보내지 마라. 안 본다.</p>
+ 
+ </div>
+ </div>
+ </section>
+ </main>
 
-    <footer style="background: #111; padding: 30px 0; border-top: 4px solid #ff3b3b; margin-top: 50px;">
-        <div class="container">
-            <p style="text-align: center; font-size: 0.9rem; color: #666;">© 2025 RAW CONCRETE. 망원 클럽 룩북. 모든 권리는 콘크리트에 있다.</p>
-            <p style="text-align: center; font-size: 0.8rem; color: #555;">전화 010-6279-0862 | 주소: 서울 마포구 망원동</p>
-        </div>
-    </footer>
+ <footer style="background: #111; padding: 30px 0; border-top: 4px solid #ff3b3b; margin-top: 50px;">
+ <div class="container">
+ <p style="text-align: center; font-size: 0.9rem; color: #666;">© 2025 RAW CONCRETE. 망원 클럽 룩북. 모든 권리는 콘크리트에 있다.</p>
+ <p style="text-align: center; font-size: 0.8rem; color: #555;">주소: 서울 마포구 망원동</p>
+ </div>
+ </footer>
 </body>
 </html>
